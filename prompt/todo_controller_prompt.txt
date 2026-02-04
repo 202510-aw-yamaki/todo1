@@ -1,0 +1,12 @@
+﻿指示:
+- Spring BootでToDoアプリ用のControllerを作成
+- クラス名: TodoController
+- @Controllerアノテーションを使用
+- エンドポイント: GET /todos (一覧), GET /todos/new (新規作成), GET /todos/{id} (詳細)
+- 各メソッドの説明コメントを含める
+
+結果:
+- 作成したファイル:
+  - src/main/java/com/example/todo1/controller/TodoController.java
+- 変更したファイル:
+  - なし
