@@ -32,7 +32,22 @@
             <dd class="col-sm-9" th:text="${todoForm.priority}">1</dd>
         </dl>
 
-        <a class="btn btn-outline-secondary" th:href="@{/todos/new}">戻る</a>
+        <div class="d-flex gap-2">
+            <form th:action="@{/todos/back}" th:object="${todoForm}" method="post" class="m-0">
+                <input type="hidden" th:field="*{title}" />
+                <input type="hidden" th:field="*{description}" />
+                <input type="hidden" th:field="*{dueDate}" />
+                <input type="hidden" th:field="*{priority}" />
+                <button class="btn btn-outline-secondary" type="submit">戻る</button>
+            </form>
+            <form th:action="@{/todos/complete}" th:object="${todoForm}" method="post" class="m-0">
+                <input type="hidden" th:field="*{title}" />
+                <input type="hidden" th:field="*{description}" />
+                <input type="hidden" th:field="*{dueDate}" />
+                <input type="hidden" th:field="*{priority}" />
+                <button class="btn btn-primary" type="submit">登録</button>
+            </form>
+        </div>
     </main>
 
     <footer class="bg-white border-top py-3">
