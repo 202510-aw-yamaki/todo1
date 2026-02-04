@@ -1,0 +1,14 @@
+指示:
+- Spring BootでフォームデータをPOSTで受け取る処理を実装
+- 入力画面（GET /todos/new）でフォームオブジェクトを初期化
+- フォーム送信（POST /todos/confirm）でデータを受け取り
+- @ModelAttributeを使用
+- Thymeleafのth:objectとth:fieldを使用したフォーム
+- 入力画面のHTML（form.html）とControllerの両方を示す
+
+結果:
+- 作成したファイル:
+  - src/main/resources/templates/todos/form.html
+  - src/main/resources/templates/todos/confirm.html
+- 変更したファイル:
+  - src/main/java/com/example/todo1/controller/TodoController.java
