@@ -11,3 +11,16 @@
   - src/main/java/com/example/todo1/form/TodoForm.java
 - 変更したファイル:
   - なし
+
+【その後の修正】
+問題点:
+- jakarta.validation が解決できず、バリデーションアノテーションがエラーになった。
+
+修正指示:
+- pom.xml に Bean Validation 用の依存関係を追加する。
+
+結果:
+- 作成したファイル:
+  - なし
+- 変更したファイル:
+  - pom.xml
