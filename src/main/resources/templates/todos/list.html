@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,7 +21,7 @@
     <main class="container my-4">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h2 class="h5 mb-0">ToDo一覧</h2>
-            <a class="btn btn-primary" href="/todos/new">新規作成</a>
+            <a class="btn btn-primary" th:href="@{/todos/new}">新規作成</a>
         </div>
 
         <div class="table-responsive">
@@ -35,24 +35,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>サンプルToDo</td>
-                        <td>未完了</td>
+                    <tr th:each="todo : ${todos}">
+                        <td th:text="${todo.id}">1</td>
+                        <td th:text="${todo.title}">サンプルToDo</td>
+                        <td th:text="${todo.status}">未完了</td>
                         <td class="text-end">
-                            <a class="btn btn-sm btn-outline-secondary" href="/todos/1">詳細</a>
-                            <a class="btn btn-sm btn-outline-primary" href="/todos/1/edit">編集</a>
-                            <a class="btn btn-sm btn-outline-danger" href="/todos/1/delete">削除</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>次にやること</td>
-                        <td>完了</td>
-                        <td class="text-end">
-                            <a class="btn btn-sm btn-outline-secondary" href="/todos/2">詳細</a>
-                            <a class="btn btn-sm btn-outline-primary" href="/todos/2/edit">編集</a>
-                            <a class="btn btn-sm btn-outline-danger" href="/todos/2/delete">削除</a>
+                            <a class="btn btn-sm btn-outline-secondary" th:href="@{/todos/{id}(id=${todo.id})}">詳細</a>
+                            <a class="btn btn-sm btn-outline-primary" th:href="@{/todos/{id}/edit(id=${todo.id})}">編集</a>
+                            <a class="btn btn-sm btn-outline-danger" th:href="@{/todos/{id}/delete(id=${todo.id})}">削除</a>
                         </td>
                     </tr>
                 </tbody>

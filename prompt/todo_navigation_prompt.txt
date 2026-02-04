@@ -1,0 +1,14 @@
+指示:
+- Thymeleafで画面遷移を実装
+- 一覧画面（/todos）: 新規作成ボタン → 新規作成画面、各行の「詳細」リンク → 詳細画面
+- 新規作成画面（/todos/new）: 「戻る」ボタン → 一覧画面
+- 詳細画面（/todos/{id}）: 「一覧に戻る」ボタン → 一覧画面、「編集」ボタン → 編集画面
+- th:hrefの使い方とパラメータの渡し方を示す
+
+結果:
+- 作成したファイル:
+  - src/main/resources/templates/todos/new.html
+  - src/main/resources/templates/todos/detail.html
+  - src/main/resources/templates/todos/edit.html
+- 変更したファイル:
+  - src/main/resources/templates/todos/list.html
