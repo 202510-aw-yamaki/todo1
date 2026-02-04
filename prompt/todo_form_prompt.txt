@@ -1,0 +1,13 @@
+指示:
+- Spring BootでToDoアプリ用のフォームクラスを作成
+- クラス名: TodoForm
+- フィールド: title(String), description(String), dueDate(LocalDate), priority(Integer)
+- Lombokを使用（@Data, @NoArgsConstructor, @AllArgsConstructor）
+- 各フィールドに適切なバリデーションアノテーションを付与
+- バリデーションメッセージは日本語で設定
+
+結果:
+- 作成したファイル:
+  - src/main/java/com/example/todo1/form/TodoForm.java
+- 変更したファイル:
+  - なし
