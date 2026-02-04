@@ -1,0 +1,9 @@
+﻿指示:
+- promptフォルダをtodo1直下に作成し、そのフォルダ内にtxtファイルとして私の指示とその結果作成したファイル群及び変更したファイル群を明記して保存してください。
+
+結果:
+- 作成したファイル:
+  - src/main/java/com/example/todo1/controller/HelloController.java
+  - src/main/resources/templates/hello.html
+- 変更したファイル:
+  - なし
