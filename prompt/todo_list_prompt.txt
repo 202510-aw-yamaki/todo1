@@ -1,0 +1,15 @@
+指示:
+- ThymeleafでToDoアプリの一覧画面を作成
+- ファイル名: list.html
+- 場所: src/main/resources/templates/todo/ （指示ミスのため後で todo → todos に変更）
+- ヘッダーとフッターを含むレイアウト
+- ToDoリストをテーブルで表示
+- 新規作成へのリンクボタン
+- 各行に詳細・編集・削除へのリンク
+- Bootstrap 5のCDNを使用してスタイリング
+
+結果:
+- 作成したファイル:
+  - src/main/resources/templates/todos/list.html
+- 変更したファイル:
+  - なし
